@@ -6,6 +6,14 @@
 # Naam: Antonio Mazzara
 #
 from collections import Counter
+import subprocess
+
+subprocess.run(["pip", "install", "nltk"])
+import nltk
+
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+
 
 #import van stemming-bibliotheek Snowball
 from nltk.stem.snowball import SnowballStemmer
